@@ -5,15 +5,9 @@ import Episode from "./episode/Episode";
 import episodesInfo from "./episodes.json";
 import GlobalStyle from "./GlobalStyle";
 import podcastInfo from "./podcast-info.json";
+import PodcastInfo from "./PodcastInfo";
 import theme from "./theme";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faTwitch,
-  faYoutube,
-  faInstagram,
-  faTelegramPlane
-} from "@fortawesome/free-brands-svg-icons";
+import SocialInfo from "./SocialInfo";
 
 const Main = styled.main`
   display: flex;
@@ -30,15 +24,6 @@ const Main = styled.main`
 
   > * + * {
     margin-top: 1rem;
-  }
-`;
-
-const Social = styled.section`
-  display: flex;
-  align-items: center;
-
-  > * + * {
-    margin-left: 0.5rem;
   }
 `;
 
@@ -62,85 +47,9 @@ const App = () => (
     </Helmet>
     <GlobalStyle />
     <Main>
-      <h1>{podcastInfo.title}</h1>
-      <p>
-        {podcastInfo.description.replace(
-          "https://www.twitch.tv/doddophonique",
-          "twitch"
-        )}
-      </p>
-      <p>
-        Puoi iscriverti al podcast utilizzando il tuo client preferito tramite
-        il comodo{" "}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href={`${process.env.PUBLIC_URL}/feed.xml`}
-        >
-          feed
-        </a>
-        .
-      </p>
-
+      <PodcastInfo />
       <Episode episode={latestEpisode} />
-
-      <Social>
-        <span>Dodds</span>
-        <a
-          href="https://www.instagram.com/doddophonique/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon size="lg" icon={faInstagram} />
-        </a>
-
-        <a
-          href="https://t.me/Doddophonique"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon size="lg" icon={faTelegramPlane} />
-        </a>
-
-        <a
-          href="https://www.youtube.com/channel/UCtgooS_6RtECnEJZEpJrv7w"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon size="lg" icon={faYoutube} />
-        </a>
-
-        <a
-          href="https://www.twitch.tv/doddophonique"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon size="lg" icon={faTwitch} />
-        </a>
-      </Social>
-
-      <Social>
-        <span>Matzu</span>
-        <a
-          href="https://www.instagram.com/tuttobeneappartelavita/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon size="lg" icon={faInstagram} />
-        </a>
-
-        <a href="https://t.me/matzuh" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon size="lg" icon={faTelegramPlane} />
-        </a>
-
-        <a
-          href="https://www.youtube.com/user/HPAmerijuanican"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon size="lg" icon={faYoutube} />
-        </a>
-      </Social>
+      <SocialInfo />
     </Main>
   </>
 );
