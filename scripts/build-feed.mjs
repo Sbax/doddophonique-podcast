@@ -40,7 +40,10 @@ episodes.map(({ name, description, files, date }) => {
     description: description,
     url,
     guid: uuid(),
-    date: new Date(date)
+    date: new Date(date),
+    enclosure: {
+      url
+    }
   };
 
   return feed.addItem(item);
