@@ -1,0 +1,39 @@
+{
+  "name": "podcast-test",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://doddophonique-podcast.netlify.com",
+  "dependencies": {
+    "podcast": "^1.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "3.0.1",
+    "react-soundplayer": "^1.0.4",
+    "styled-components": "^4.2.0",
+    "styled-reset": "^2.0.13",
+    "uuid": "^3.3.2"
+  },
+  "scripts": {
+    "build:feed": "node --experimental-modules scripts/build-feed.mjs",
+    "start:react": "react-scripts start",
+    "build:react": "react-scripts build",
+    "start": "npm run build:feed && npm run start:react",
+    "build": "npm run build:feed && npm run build:react",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
