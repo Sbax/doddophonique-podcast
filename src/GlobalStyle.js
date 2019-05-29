@@ -13,9 +13,27 @@ const GlobalStyle = createGlobalStyle`
     color: ${theme.text};
   }
 
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+
   a {
-    color: ${theme.accent};
+    color: ${theme.secondary};
     text-decoration: none;
+
+    transition: color 300ms ease-in-out;
+
+    &:hover {
+      color: ${theme.primary};
+    }
+  }
+
+  h1 {
+    font-weight: bold;
+  }
+
+  p {
+    line-height: 1.2rem;
   }
 `;
 
