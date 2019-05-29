@@ -89,10 +89,13 @@ const PlayBar = styled.div`
     background: ${theme.accent};
     border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
 
+    transition: border-radius 1s;
+
     border: 0;
     outline: 0;
 
     &.playing {
+      transition: border-radius 1s;
       animation: transform 20s ease-in-out infinite both alternate;
     }
 
