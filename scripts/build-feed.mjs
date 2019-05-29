@@ -29,15 +29,15 @@ const feed = new Podcast({
   itunesImage: `${homepage}/${image}`
 });
 
-episodes.map(({ name, description, files, date }) => {
+episodes.map(({ title, description, files, date }) => {
   const [file] = files;
   const url = file.url
     ? file.url
     : `${homepage}/episodes/${file.name}.${file.format}`;
 
   const item = {
-    title: name,
-    description: description,
+    title,
+    description,
     url,
     guid: uuid(),
     date: new Date(date),
