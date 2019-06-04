@@ -10,5 +10,18 @@
         "url": "https://s3.nl-ams.scw.cloud/files.doddophonique/ULPV0_storia-di-cheating-e-hacking.m4a"
       }
     ]
+  },
+  {
+    "ordinal": 1,
+    "title": "Emulazione e dintorni",
+    "date": "2019-06-03",
+    "description":
+        "Secondo appuntamento con il podcast di Doddo e Matzu sui videogiochi, la loro storia e le loro curiosità: questa volta parliamo di emulazione, perché esiste e a che cosa serve, come funziona e tutte le controversie che si porta dietro da molti anni.",
+    "files": [
+      {
+        "format": "m4a",
+        "url": "https://s3.nl-ams.scw.cloud/files.doddophonique/ULPV1_emulazione-e-dintorni.m4a"
+      }
+    ]
   }
 ]
