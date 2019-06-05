@@ -8,7 +8,16 @@
       {
         "format": "m4a",
         "url": "https://s3.nl-ams.scw.cloud/files.doddophonique/ULPV0_storia-di-cheating-e-hacking.m4a"
+      },
+      {
+        "format": "mp3",
+        "url": "https://s3.nl-ams.scw.cloud/files.doddophonique/ULPV0_storia-di-cheating-e-hacking.mp3"
+      },
+      {
+        "format": "ogg",
+        "url": "https://s3.nl-ams.scw.cloud/files.doddophonique/ULPV0_storia-di-cheating-e-hacking.ogg"
       }
+
     ]
   },
   {
@@ -21,7 +30,16 @@
       {
         "format": "m4a",
         "url": "https://s3.nl-ams.scw.cloud/files.doddophonique/ULPV1_emulazione-e-dintorni.m4a"
+      },
+      {
+        "format": "mp3",
+        "url": "https://s3.nl-ams.scw.cloud/files.doddophonique/ULPV1_emulazione-e-dintorni.mp3"
+      },
+      {
+        "format": "ogg",
+        "url": "https://s3.nl-ams.scw.cloud/files.doddophonique/ULPV1_emulazione-e-dintorni.ogg"
       }
+
     ]
   }
 ]
