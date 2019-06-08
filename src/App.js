@@ -19,6 +19,7 @@ const Main = styled.main`
   margin: auto;
 
   width: 100vw;
+  max-width: 1024px;
 
   > * + * {
     margin-top: 2rem;
