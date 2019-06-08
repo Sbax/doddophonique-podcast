@@ -1,6 +1,7 @@
 import React from "react";
 import EpisodePlayer from "./EpisodePlayer";
 import styled from "styled-components";
+import Navigator from "../Navigator";
 
 const Container = styled.article`
   > * + * {
@@ -42,6 +43,7 @@ const Episode = ({ episode }) => (
     </Header>
     <EpisodePlayer episode={episode} />
     <Description>{episode.description}</Description>
+    <Navigator active={episode.ordinal} />
   </Container>
 );
 

@@ -38,18 +38,18 @@ const PlayBar = styled.div`
       width: 100%;
       -webkit-mask-image: url(${`${process.env.PUBLIC_URL}/sound.svg`});
       mask-image: url(${`${process.env.PUBLIC_URL}/sound.svg`});
-      background: ${theme.primary};
+      background: ${theme.secondary}55;
     }
 
     &-inner {
       height: 100%;
       background: linear-gradient(
         to right,
-        ${theme.accent},
+        ${theme.primary},
         ${theme.secondary},
-        ${theme.accent}
+        ${theme.primary}
       );
-      background-size: 33vw;
+      background-size: 100vw;
     }
   }
 `;
@@ -109,8 +109,8 @@ const PlayButton = styled.button`
     align-items: center;
   }
 
-  color: ${theme.primary};
-  background: linear-gradient(66deg, ${theme.accent}, ${theme.secondary});
+  color: ${theme.mainBg};
+  background: linear-gradient(66deg, ${theme.primary}, ${theme.secondary});
   background-size: 160% 160%;
   border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
 
@@ -138,7 +138,7 @@ const CustomPlayer = withCustomAudio(props => {
           }
         >
           <span>
-            <FontAwesomeIcon size="fw" icon={playing ? faPause : faPlay} />
+            <FontAwesomeIcon size="sm" icon={playing ? faPause : faPlay} />
           </span>
         </PlayButton>
         <Progress value={(currentTime / duration) * 100 || 0} {...props} />
