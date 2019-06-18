@@ -41,5 +41,27 @@
       }
 
     ]
+  },
+  {
+    "ordinal": 2,
+    "title": "Colonne sonore",
+    "date": "2019-06-03",
+    "description":
+        "Il terzo appuntamento con il podcast ci porta a parlare di uno degli elementi cardine dei videogiochi: la colonna sonora. Dove non arriva la trama, il gameplay o l'ambentazione, spesso arriva la giusta melodia, ed è un valore inestimabile per le esperienze che abbiamo vissuto.",
+    "files": [
+      {
+        "format": "m4a",
+        "url": "https://s3.nl-ams.scw.cloud/files.doddophonique/ULPV2_colonne-sonore.m4a"
+      },
+      {
+        "format": "mp3",
+        "url": "https://s3.nl-ams.scw.cloud/files.doddophonique/ULPV2_colonne-sonore.mp3"
+      },
+      {
+        "format": "ogg",
+        "url": "https://s3.nl-ams.scw.cloud/files.doddophonique/ULPV2_colonne-sonore.ogg"
+      }
+
+    ]
   }
 ]
