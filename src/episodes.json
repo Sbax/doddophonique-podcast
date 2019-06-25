@@ -63,5 +63,27 @@
       }
 
     ]
+  },
+  {
+    "ordinal": 3,
+    "title": "Microtransazioni e lootbox",
+    "date": "2019-06-24",
+    "description":
+        "Pagare qualche spicciolo per avere la possibilità di ottenere qualche oggetto epico, raro, comune. Questa è la strada che ha intrapreso gran parte dell'industria dei videogame negli ultimi anni, ispirandosi grandemente al mondo asiatico, culla dei gacha game. Ma siamo proprio sicuri che istigare il gioco d'azzardo minorile sia una buona idea?",
+    "files": [
+      {
+        "format": "m4a",
+        "url": "https://s3.nl-ams.scw.cloud/files.doddophonique/ULPV3_mtx-e-lootbox.m4a"
+      },
+      {
+        "format": "mp3",
+        "url": "https://s3.nl-ams.scw.cloud/files.doddophonique/ULPV3_mtx-e-lootbox.mp3"
+      },
+      {
+        "format": "ogg",
+        "url": "https://s3.nl-ams.scw.cloud/files.doddophonique/ULPV3_mtx-e-lootbox.ogg"
+      }
+
+    ]
   }
 ]
