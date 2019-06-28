@@ -1,0 +1,1 @@
+La prima puntata cerca di riassumere la storia di cheat, hack e tutte le idiosincrasie che li hanno accompagnati: le loro evoluzioni e le diverse ramificazioni che hanno sviluppato, il passaggio da single a multiplayer e molto altro.

@@ -1,7 +1,8 @@
-import React, { memo } from "react";
+import React, { memo, useState, useEffect } from "react";
 import EpisodePlayer from "./EpisodePlayer";
 import styled from "styled-components";
 import Navigator from "../Navigator";
+const ReactMarkdown = require("react-markdown");
 
 const Container = styled.article`
   > * + * {
@@ -25,9 +26,36 @@ const Title = styled.h1`
   font-weight: 500;
 `;
 
-const Description = styled.p``;
+const Description = styled.div`
+  line-height: 1.4;
+
+  b,
+  strong {
+    font-weight: bold;
+  }
+
+  em,
+  i {
+    font-style: italic;
+  }
+`;
 
 const Episode = ({ episode }) => {
+  const [data, setData] = useState();
+
+  useEffect(() => {
+    const fetchData = async () => {
+      if (!episode.descriptionFile) return;
+      const result = await import(
+        `!raw-loader!../md/${episode.descriptionFile}`
+      );
+
+      setData(result.default);
+    };
+
+    fetchData();
+  }, [episode]);
+
   const EpisodeWrapper = memo(
     ({ episode }) => <EpisodePlayer episode={episode} />,
     (a, b) => a.ordinal === b.ordinal
@@ -48,7 +76,15 @@ const Episode = ({ episode }) => {
         <Title>{episode.title}</Title>
       </Header>
       <EpisodeWrapper episode={episode} />
-      <Description>{episode.description}</Description>
+      <Description>
+        {episode.descriptionFile ? (
+          <React.Suspense fallback={null}>
+            <ReactMarkdown source={data} />
+          </React.Suspense>
+        ) : (
+          episode.description
+        )}
+      </Description>
       <Navigator active={episode.ordinal} />
     </Container>
   );
