@@ -86,5 +86,26 @@
       }
 
     ]
+  },
+  {
+    "ordinal": 4,
+    "title": "Speedrun e GDQ",
+    "date": "2019-07-01",
+    "files": [
+      {
+        "format": "m4a",
+        "url": "https://s3.nl-ams.scw.cloud/files.doddophonique/ULPV4_speedrun-e-gdq.m4a"
+      },
+      {
+        "format": "mp3",
+        "url": "https://s3.nl-ams.scw.cloud/files.doddophonique/ULPV4_speedrun-e-gdq.mp3"
+      },
+      {
+        "format": "ogg",
+        "url": "https://s3.nl-ams.scw.cloud/files.doddophonique/ULPV4_speedrun-e-gdq.ogg"
+      }
+
+    ],
+    "descriptionFile": "episode4.md"
   }
 ]
